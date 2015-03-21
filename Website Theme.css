@@ -1,0 +1,240 @@
+﻿/* 
+    Gregory Desrosiers - Personal Website
+
+    Website Theme Code
+    (Style Assignments, Timing, etc.)
+
+    File Created: March 14, 2015
+
+    Start Date: February 26, 2015
+    End Date:
+
+    Coded by Gregory Desrosiers
+
+    With Support from the following:
+    Dave Pagurek Van Mossel
+    Abhishek Madan
+    Mohammed Bilal Akhtar
+    Cora Lam
+    Deon Hua
+    University of Waterloo - Software Engineering Class of 2019
+
+    External Supporters:
+    Ho Man Chan
+
+    File: Home Page.html
+    Programming Languages: HTML 5, CSS 3
+
+    Resources Used:
+    http://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+    W3 Schools
+    Google Fonts API
+
+
+    © 2015 Gregory Desrosiers. All rights reserved.
+
+*/
+
+
+/* Three font families imported from Google API: Boogaloo, Bitter Fredoka One, and Ubuntu*/
+@import url(http://fonts.googleapis.com/css?family=Bitter|Fredoka+One|Boogaloo);
+
+
+
+/* Font Families from External Files */
+
+@font-face {
+	/* Using Consolas for Subheading Font Family */
+	font-family: "Main Text Family";
+	font-weight: 400;
+	src: url(consola.ttf);
+}
+
+@font-face {
+	/* Using MV Boli for Subheading Font Family */
+	font-family: "Subheading Font Family";
+	font-weight: 400;
+	src: url(mvboli.ttf);
+}
+
+@font-face{
+	/* Using JasmineUPC for my name displayed on each page*/
+	font-family: "My Name Font Family";
+	font-weight: 400;
+	src: url(upcJl.ttf);
+}
+
+
+
+
+/* CSS Properties based on Class Names */
+
+.mainText{
+	font-family: Bitter;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.subHeadings{
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-size: 20px;
+}
+
+.warningMessages{
+	font-family: Bitter, "Times New Roman", Arial;
+	font-weight: 400;
+	color:#E53935;
+}
+
+.boldEntries{
+	font-weight: 500;
+}
+
+.boldHeadings{
+	font-weight: 600;
+}
+
+.blogLinks{
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	text-decoration: none;
+	color:#FF6633;
+	font-size:20px;
+}
+
+a.linkMenu{
+
+	color: #33691E;
+	display: inline-block;
+	padding: 6px;
+	margin: 2px;
+	text-decoration: none;
+	background-color: #8BC34A;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-size: 16px;
+}
+
+a.linkMenu:hover{
+	color: #CCFF33;
+	background-color: #1B5E20;
+}
+
+a.linkMenu:first-child{
+	margin-left: 0px; 
+}
+
+a.linkMenu:last-child{
+	margin-right: 0px;
+}
+
+.incorporatedMainTextLinks{
+	text-decoration: none;
+	color: #B9F6CA;
+	transition: all 0.5s ease;
+}
+
+.incorporatedMainTextLinks:hover{
+	color: #CDDC39;
+}
+
+.imageContainerProperties{
+	text-align: center;
+}
+
+/* CSS Properties based on Element Tags */
+
+body{
+	background-color: #37474F;
+	color: white;
+	text-align:justify;
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2 {
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-weight: 400;
+	font-size: 33px;
+}
+
+h3 {
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-weight: 200;
+	font-size: 30px;
+	text-align: center;
+}
+
+h4 {
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+img{
+	border: 10px hidden;
+	border-radius: 20px;
+}
+
+a.followMeButtons {
+	color: #33691E;
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	text-decoration: none;
+	background-color: #76FF03;
+	border-radius: 12px;
+	transition: all 0.5s ease;
+	font-family: Boogaloo, "Comic Sans MS", Tahoma;
+	font-size: 18px;
+}
+
+a.followMeButtons:hover{
+	color: #CCFF33;
+	background-color: #1B5E20;
+}
+
+
+/* CSS Properties based on IDs */
+
+#followMeLinksSection{
+	text-align: center;
+}
+
+#aboutMeNameEnlarge{
+	font-size: 32px;	
+}
+
+h1{
+	text-align: center;
+}
+
+#nameAtTopOfPage{
+	text-decoration: none;
+	color:#F44336;
+	font-family: Boogaloo;
+	text-shadow: 2px 2px #006064;
+}
+
+#copyrightInfo{
+	text-align: center;
+	font-family: 'Bitter';
+	font-weight: 200;
+	font-size: 13px;
+	margin-top: 25px;
+}
+
+#followMeButtons{
+	text-align: center;
+}
+
+#websiteMenu{
+	text-align: center;
+}
+
+#uwaterlooLogo{
+	display:block;
+	width: 35%;
+	height: 35%;
+}
