@@ -1,0 +1,53 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Explore More about Myself - About Me - CSS Spreadsheet
+    
+    Start Date: March 1, 2016
+    End Date:
+    
+    File Name: Explore More about Myself - About Me.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+
+
+
+
+.exploreMoreAboutMyselfQuotes {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.exploreMoreAboutMyselfSocialNetwork {
+    margin-top: 10px;
+}
+
+.exploreMoreAboutMyselfList {
+    margin-top: 35px;
+}
+
+
+/* Common CSS IDs */
+#exploreMoreAboutMyselfName {
+    font-size: 180%;
+}
+
+#personalCatchphrase {
+    font-size: 20px;
+}
+
+#exploreMoreAboutMyselfPersonalVideoGameTheme {
+    font-weight: 600;
+}
+
+#moreDetailsOnMyInterestsResponsive {
+    overflow:visible;
+    height: 30px;
+}

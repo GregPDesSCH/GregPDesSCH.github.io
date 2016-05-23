@@ -1,0 +1,146 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Resume - CSS Spreadsheet
+    
+    Start Date: February 29, 2016
+    End Date:
+    
+    File Name: Resume.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+
+
+/* Common CSS Classes */
+body {
+    font-family: "Gill Sans MT", "Cambria", "Helvetica", sans-serif;
+}
+
+.centeredTextInTableCells {
+    text-align: center;
+}
+
+.resumeBlock {
+    display: inline-block;
+    width: 100%;
+}
+
+.resumeHeadlineText {
+    font-size: 130%;
+}
+
+
+
+.resumeSection{
+    margin-bottom: 80px;
+}
+
+
+.technologiesBlock {
+    margin-bottom: 10px;
+}
+
+
+.technicalExperienceRightSide {
+    float: right;
+}
+
+.personCaption {
+    font-size: 120%;
+}
+
+
+
+
+.importantSubsectionWithSpaceUnderneath {
+    margin-bottom: 40px;
+}
+
+.importantSectionHeader {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Common CSS IDs*/
+
+#sectionAboveResumeHeader {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#sectionAboveResumeHeaderResponsive {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#technologiesBlock {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resumeHeaderLeftHandSide, #technologiesLeftHandSide {
+    float: left;
+    
+}
+
+#technologiesLeftHandSide {
+    width: 49%;
+    max-width: 49%;
+    margin-right: 1%;
+}
+
+#technologiesRightHandSide {
+    width: 49%;
+    max-width: 49%;
+    margin-left: 1%;
+    word-break: keep-all;
+}
+
+#resumeHeaderRightHandSide {
+    float: right;
+    
+}
+
+
+
+
+
+
+
+
+/* Resume Header containers */
+#resumeHeader{
+    display: inline-block;
+    width: 100%;
+}
+
+#resumeHeaderResponsive {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/* Resume Header Components */
+#resumeHeaderNameWiiU {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+
+#technologiesRightHandSide {
+    word-wrap:break-word;
+    float: right;
+    clear: right;
+    width: 400px;
+}
+

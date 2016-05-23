@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<!-- 
+    Gregory Desrosiers' Personal Website v2.0
+    You better contact me! (Wii U Version)
+    
+    Start Date: February 14, 2016
+    End Date:
+    
+    File Name: You better contact me! (Wii U).html
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+-->
+
+<html>
+    <head>
+        <title>Gregory Desrosiers (University of Waterloo SE 2019) - You better contact me!</title>
+        
+        <!-- Metadata Sets -->
+        <meta charset="UTF-8">
+        
+        <!-- Spreadsheets -->
+        <link href="../../CSS Files/Fonts/Fonts.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Common CSS Classes.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Contact Me.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Fonts/font-awesome-4.5.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Page Body Background.css" type="text/css" rel="stylesheet">
+    
+        <!-- JavaScript Files -->
+        <script src="../../Framework Files/jquery-2.2.1.min.js"></script>
+        <script src="../../JavaScript Files/E-mail Form.js"></script>
+        <script src="../../JavaScript Files/Wii U Menu.js"></script>
+        <script src="../../JavaScript Files/Footer Bar.js" id="footerBarScript" data-systemType="2"></script>
+        <script src="../../JavaScript Files/Follow Me Links.js" id="followMeScript" data-systemType="2"></script>
+    </head>
+    <body id="youBetterContactMeBackground">
+        
+        <div class="pageBodyBlock">
+            
+            <!-- Page Header -->
+            <h1 class="projectPaintballFontFamily centeredPageHeader" id="websiteHeader">Gregory P. Desrosiers</h1>
+            <h2 class="pageHeader projectPaintballFontFamily">You better contact me!</h2>
+            
+            
+            <div>
+                If you want to contact me, you can send me an e-mail using the form below. In case you run into trouble with this form, you can also send an e-mail to gdesrosi&#64;uwaterloo.ca.
+            </div>
+            <div>
+                This e-mail form is powered by Formspree, which is a third-party tool managed on GitHub. <a href="http://formspree.io">Check it out here!</a>
+            </div>
+
+
+            <form>
+
+                
+                <!-- "Type of E-mail" Block -->
+                <div class="youBetterContactMeSpacing" id="typeOfEmail">
+                    <h3 class="contactMeHeader projectPaintballFontFamily">What type of e-mail do you want to send?</h3>
+                    <div class="inputSpacing">
+                        <span class="projectPaintballFontFamily"><input type="radio" name="typeOfMessage" value="comment"  id="personalCommentRadioButton" checked>Personal Comment</span>
+                        <div class="inputCaption">Select this to submit a comment or a review.</div>
+                    </div>
+                    <div class="inputSpacing">
+                        <span class="projectPaintballFontFamily"><input type="radio" name="typeOfMessage" value="complaint"  id="complaintRadioButton">Complaint</span>
+                        <div class="inputCaption">Click here to send a complaint about something in the website.</div>
+                    </div>
+                    <div class="inputSpacing">
+                        <span class="projectPaintballFontFamily"><input type="radio" name="typeOfMessage" value="complement"  id="complementRadioButton">Complement</span>
+                        <div class="inputCaption">Forward a complement.</div>
+                    </div>
+                    <div class="inputSpacing">
+                        <span class="projectPaintballFontFamily"><input type="radio" name="typeOfMessage" value="businessInquiry"  id="businessInquiryRadioButton">Business Inquiry</span>
+                        <div class="inputCaption">
+                            With this type of e-mail, you can discuss about employment referrals, job networking, job opportunities, or for using this website in certain business applications for training and learning purposes.
+                        </div>
+                    </div>
+                    <div class="inputSpacing">
+                        <span class="projectPaintballFontFamily"><input type="radio" name="typeOfMessage" value="publicRelations" id="publicRelationsRadioButton">Public Relations</span>
+                        <div class="inputCaption">
+                            This is for promotion, advertising, social media, or to the press including news outlets.
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- "Anonymous User" and "Copy Message" Block -->
+                <div class="youBetterContactMeSpacing" >
+                    <div class="inputSpacing" id="sendAnAnonymousMessageBlock">
+                        <input type="checkbox" title="Click here to toggle anonymous mode, which lets you send an e-mail without your name and e-mail address required." id="sendAsAnonymousCheckbox">Send as Anonymous
+                        <div class="inputCaption">
+                            Click here to toggle anonymous mode, which lets you send an e-mail without your name required.
+                        </div>
+                    </div>
+                    <div class="inputSpacing" id="sendCopyToEmailBlock">
+                        <input type="checkbox" title="" id="sendCopyToEMailAddressCheckbox">Send copy to your e-mail address
+                        <div class="inputCaption">
+                            Send a copy of this e-mail to your e-mail address. (Does not affect your anonymous status if you want to send an anonymous e-mail.)
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Important Sections and Fields -->
+                <section class="youBetterContactMeSpacing">
+                    <h4>* Required fields</h4>
+                </section>
+
+                <section class="youBetterContactMeSpacing" id="nameBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Name*</h4>
+                    <input type="text" name="name" id="nameTextField" maxlength="50" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing businessInquiryBlock publicRelationsBlock hiddenBlocks" id="companyNameBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Company Name</h4>
+                    <input type="text" name="companyName" maxlength="100" id="companyName" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing businessInquiryBlock publicRelationsBlock hiddenBlocks" id="positionOrOccupationBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Position / Occupation</h4>
+                    <input type="text" name="positionOrOccupation" maxlength="70" id="positionOrOccupation" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing" id="eMailAddressBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">E-mail Address*</h4>
+                    <input type="email" name="_replyto" id="eMailAddressField" maxlength="50" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing" id="phoneNumberBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Phone Number (Canada and US only)</h4>
+                    <div class="inputCaption">If your phone number is from somewhere else, please provide it in the message itself.</div>
+                    <input type="text" name="phoneNumber" maxlength="25" id="phoneNumberTextField" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing businessInquiryBlock hiddenBlocks">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Type of Business Inquiry*</h4>
+                    <select name="typeOfBusinessInquiry" id="typeOfBusinessInquiryComboBox">
+                        <option value="">Choose...</option>
+                        <option value="Employment Referral">Employment Referral</option>
+                        <option value="Job Networking">Job networking</option>
+                        <option value="Job Opportunities">Job opportunities</option>
+                        <option value="Other">Other (please mention in the subject)</option>
+                    </select>
+                </section>
+
+                <section class="youBetterContactMeSpacing publicRelationsBlock hiddenBlocks">
+                    <h4 class="contactMeHeader projectPaintballFontFamily publicRelationsBlock">Type of Public Relations*</h4>
+                    <select name="typeOfPublicRelations" id="typeOfPublicRelationsComboBox">
+                        <option value="">Choose...</option>
+                        <option value="Advertising">Advertising</option>
+                        <option value="Promotion">Promotion</option>
+                        <option value="Social Networking">Social Networking</option>
+                        <option value="Press">Press (Newspaper, magazine, etc...)</option>
+                        <option value="Other">Other (please mention in the subject)</option>
+                    </select>
+                </section>
+
+                <section class="youBetterContactMeSpacing">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Subject</h4>
+                    <input type="text" name="_subject" id="subjectTextField" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing businessInquiryBlock publicRelationsBlock hiddenBlocks" id="linkedinProfileBlock">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">LinkedIn Profile</h4>
+                    <div class="inputCaption projectPaintballFontFamily">Please provide the full URL to your profile, and replace the country code next to the "://" with "www" if needed.</div>
+                    <input type="text" name="linkedinProfile" id="linkedInProfileTextField" maxlength="80" class="inputTextField">
+                </section>
+
+                <section class="youBetterContactMeSpacing">
+                    <h4 class="contactMeHeader projectPaintballFontFamily">Message*</h4>
+                    <textarea rows="10" maxlength="2000" name="_message" id="messageBox"></textarea>
+                </section>
+
+                <div id="contactMeWarningBlock">
+                    <span id="contactMeWarningMessages"></span>
+                    <span id="contactMeSendingStatus"></span>
+                </div>
+
+                
+                <!-- Send Button -->
+                <input type="button" value="Send it!" id="sendMessageButton" class="projectPaintballFontFamily">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,319 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Read on My Blogs
+    
+    Start Date: April 2, 2016
+    End Date:
+    
+    File Name: Photo Gallery.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+
+*/
+
+#homePageMainSection {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#websiteHeader {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#homePageSubheading {
+    font-size: 24px;
+}
+
+#websiteVersion {
+    margin-top: 60px;
+}
+
+.responsiveIntroductorySection {
+    text-align: center;
+}
+
+#introductorySectionWiiU {
+    display: table; /* http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers */
+    width: 100%;
+}
+
+#leftSideOfIntroductorySectionWiiU {
+    width: inherit;
+    display: table-cell;
+    float: left;
+}
+
+#pictureAndNavButtons {
+    text-align: center;
+}
+
+#pictureComponent {
+    width: 266px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#responsivePictureComponent {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#pictureComponent img {
+    border-radius: 20px;
+}
+
+#pictureCarouselButtons {
+    text-align: center;
+}
+
+/* http://stackoverflow.com/questions/7073484/how-do-css-triangles-work */
+#pictureCarouselLeftButtonSet, #pictureCarouselRightButtonSet{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.2); /* http://stackoverflow.com/questions/10422949/css-background-opacity */
+    cursor: pointer;
+    
+    /* http://stackoverflow.com/questions/10995165/css-opposite-of-hover-on-mouse-leave */
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s; 
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+#pictureCarouselLeftButtonSet:hover, #pictureCarouselRightButtonSet:hover {
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s; 
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#pictureCarouselLeftButtonBackground {
+    display: inline-block;
+    position: relative;
+    left: -7.5px;
+    top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid black;
+    vertical-align: middle;
+}
+
+/*#pictureCarouselLeftButton {
+    position: relative;
+    left: -8.5px;
+    top: 5px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid red;
+    vertical-align: middle;
+}*/
+
+#pictureComponent {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#pictureCarouselRightButtonBackground {
+    display: inline-block;
+    position: relative;
+    left: 7.5px;
+    top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid black;
+    vertical-align: middle;
+}
+
+/*#pictureCarouselRightButton {
+    position: relative;
+    left: -10px;
+    top: 5px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid red;
+    vertical-align: middle;
+    z-index: 0;
+}*/
+
+
+
+
+
+
+
+
+
+/* Responsive Version */
+
+
+#pictureCarouselLeftButtonSetResponsive, #pictureCarouselRightButtonSetResponsive{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(128, 128, 128, 0.2); /* http://stackoverflow.com/questions/10422949/css-background-opacity */
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+#pictureCarouselLeftButtonBackgroundResponsive {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: bottom;
+}
+
+#pictureCarouselRightButtonBackgroundResponsive {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+.homePictureCarouselCircle {
+    z-index: -1;
+    border-radius: 16px;
+    border: 8px solid black;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.imageCurrentlyOpened {
+    background-color: white;
+}
+
+
+
+#rightSideOfIntroductorySectionWiiU {
+    width: 50%;
+    display: table-cell;
+    text-align: center;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.rightSideOfIntroductorySectionSymbols {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+#codingBlock, #gamingBlock, #amusementBlock {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.homePageSpecialCharacters {
+    text-decoration: none;
+}
+
+#codingBlock {
+    color: red;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    cursor: pointer;
+}
+
+#codingBlock:hover {
+    color: orangered;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+#gamingBlock {
+    color: blue;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    cursor: pointer;
+}
+
+#gamingBlock:hover {
+    color: purple;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+#amusementBlock {
+    color: green;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    cursor: pointer;
+}
+
+
+#amusementBlock:hover {
+    color: seagreen;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+
+
+
+.homePageIcon {
+    font-size: 75px;
+    display: block;
+    
+}
+
+/*.homePictureCarouselCircle {
+    z-index: -1;
+    border-radius: 8px;
+    border: 8px solid black;
+    width: 0px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px
+}
+
+.imageCurrentlyOpened {
+    display: inline-block;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px
+}*/

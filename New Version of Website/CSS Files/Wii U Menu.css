@@ -1,0 +1,84 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Menu Styling
+    
+    Start Date: April 3, 2016
+    End Date:
+    
+    File Name: Wii U Menu.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+#wiiUMenuBlock {
+    font-size: 20px;
+}
+
+.wiiUMenuSubMenu {
+    text-indent: 50px;
+}
+
+/*#wiiUMenuLeftSide {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+#wiiUMenuRightSide {
+    display: inline-block;
+    width: 50%;
+}
+
+#colorControlsBlock {
+    text-align: center;
+}
+
+#backgroundColorWarningMessage {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.wiiUMenuSubMenu {
+    text-indent: 50px;
+}
+
+.colorControlsLabel {
+    margin-bottom: 10px
+}
+
+.colorControls {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.colorSlider {
+    height: 20px;
+    vertical-align: middle;
+    width: 155px;
+}
+
+.colorIndexLabel {
+    display: inline-block;
+    width: 45px;
+    text-align: right;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.colorSampleBlock {
+    border: 2px solid black;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+}*/

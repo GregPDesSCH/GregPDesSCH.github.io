@@ -1,0 +1,47 @@
+<div id="desktopMenu">
+    <div class="desktopMenuImageBlock" id="desktopMenuGoToHomePageButton" ng-mouseenter="respondToMouseOverNavigationButton(0)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="">
+        <img src="../../Sprites/Navigation/G.png" alt="G">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuResumeButton" ng-mouseover="respondToMouseOverNavigationButton(1)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="">
+        <img src="../../Sprites/Navigation/R.png" alt="R">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuExploreMoreAboutMyself" ng-mouseover="respondToMouseOverNavigationButton(2)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="respondToMouseClickOnExploreMoreAboutMyself()">
+        <img src="../../Sprites/Navigation/E.png" alt="E">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuGitHubRepositoriesAndPortfolio" ng-mouseover="respondToMouseOverNavigationButton(3)" ng-mouseleave="respondToMouseExitNavigationButton()">
+        <img src="../../Sprites/Navigation/G.png" alt="G">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuObserveMyPersonality" ng-mouseover="respondToMouseOverNavigationButton(4)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="respondToMouseClickOnObserveMyPersonality()">
+        <img src="../../Sprites/Navigation/O.png" alt="O">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuReadMyBlogs" ng-mouseover="respondToMouseOverNavigationButton(5)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="">
+        <img src="../../Sprites/Navigation/R.png" alt="R">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuYouBetterContactMe" ng-mouseover="respondToMouseOverNavigationButton(6)" ng-mouseleave="respondToMouseExitNavigationButton()" ng-click="">
+        <img src="../../Sprites/Navigation/Y.png" alt="Y">
+    </div>
+</div>
+
+<div>
+    <div id="desktopHoverOverLabelForAMenuButton" class="projectPaintballFontFamily">
+    </div>
+
+    <div id="desktopExtraPagesBlock">
+        <div id="desktopExtraPagesHeader" ng-show="showMeLinksForExploreMoreAboutMyself || showMeLinksForObserveMyPersonality">Choose a page:</div>
+        <div id="desktopExploreMoreAboutMyselfLinks" class="desktopMenuSubmenu" ng-show="showMeLinksForExploreMoreAboutMyself">
+            <div class="customLinkStyle" ng-click="">About Me</div>
+            <div class="customLinkStyle" ng-click="">Education History</div>
+            <div class="customLinkStyle" ng-click="">Portfolio of Projects</div>
+        </div>
+        <div id="desktopObserveMyPersonalityLinks" class="desktopMenuSubmenu" ng-show="showMeLinksForObserveMyPersonality">
+            <div class="customLinkStyle">FAQ</div>
+            <div class="customLinkStyle">Photo Gallery</div>
+        </div>
+    </div>
+</div>

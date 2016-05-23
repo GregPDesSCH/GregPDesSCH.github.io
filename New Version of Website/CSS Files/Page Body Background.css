@@ -1,0 +1,123 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Page Body Background
+    
+    Start Date: April 9, 2016
+    End Date:
+    
+    File Name: Page Body Background.css
+    
+    This is where all the background colors for the pages come from; they are gradients with
+    color steps based off of the opposing team colors in Splatoon, with the most iconic one
+    being orange vs. blue.
+
+    The colors are based off of an in-game photograph of one of the Sunken Scrolls showing
+    the opposing team colors.
+
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+.pageBodyBlock {
+    background-color: white;
+    width: 78%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 25px;
+}
+
+#responsivePageBodyBlock {
+    background-color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 20px;
+    width: auto; /* http://stackoverflow.com/questions/15095833/how-to-make-the-body-width-equal-to-the-device-width-automatically-in-css3-media */
+}
+
+/* Home Page Background - Orange to Blue */
+#homePageBackground {
+    background-color: rgb(226, 65, 10); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(226, 65, 10) 50%, rgb(9, 7, 176) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(226, 65, 10) 50%, rgb(9, 7, 176) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(226, 65, 10) 50%, rgb(9, 7, 176) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(226, 65, 10) 50%, rgb(9, 7, 176) 50%); /* Standard syntax */
+}
+
+/* Resume Background - Light Purple to Green */
+#resumeBackground {
+    background-color: rgb(186, 213, 22); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(153, 4, 220) 50%, rgb(0, 149, 0) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(153, 4, 220) 50%, rgb(0, 149, 0) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(153, 4, 220) 50%, rgb(0, 149, 0) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(153, 4, 220) 50%, rgb(0, 149, 0) 50%); /* Standard syntax */
+}
+
+/* Explore More about Myself Background - Blue to Yellow-Green */
+#exploreMoreAboutMyselfBackground {
+    background-color: rgb(39, 47, 242); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(39, 47, 242) 50%, rgb(166, 221, 5) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(39, 47, 242) 50%, rgb(166, 221, 5) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(39, 47, 242) 50%, rgb(166, 221, 5) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(39, 47, 242) 50%, rgb(166, 221, 5) 50%); /* Standard syntax */
+}
+
+/* GitHub Repositories / Portfolio Background - Turquise to Pink */
+#gitHubRepositoriesPortfolioBackground {
+    background-color: rgb(7, 193, 188); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(7, 193, 188) 50%, rgb(234, 18, 141) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(7, 193, 188) 50%, rgb(234, 18, 141) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(7, 193, 188) 50%, rgb(234, 18, 141) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(7, 193, 188) 50%, rgb(234, 18, 141) 50%); /* Standard syntax */
+}
+
+/* Observe My Personality - Yellow to Navy Blue */
+#observeMyPersonalityBackground {
+    background-color: rgb(250, 240, 3); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(30, 3, 118) 50%, rgb(250, 240, 3) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(30, 3, 118) 50%, rgb(250, 240, 3) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(30, 3, 118) 50%, rgb(250, 240, 3) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(30, 3, 118) 50%, rgb(250, 240, 3) 50%); /* Standard syntax */
+}
+
+
+
+/* Read on My Blogs - Rose to Dark Orange */
+#readOnMyBlogsBackground {
+    background-color: rgb(246, 58, 108); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(246, 162, 1) 50%, rgb(246, 58, 108) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(246, 162, 1) 50%, rgb(246, 58, 108) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(246, 162, 1) 50%, rgb(246, 58, 108) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(246, 162, 1) 50%, rgb(246, 58, 108) 50%); /* Standard syntax */
+}
+
+
+
+/* You better Contact Me - Violet to Lime */
+#youBetterContactMeBackground {
+    background-color: rgb(0, 149, 0); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(86, 1, 206) 50%, rgb(186, 213, 22) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(86, 1, 206) 50%, rgb(186, 213, 22) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(86, 1, 206) 50%, rgb(186, 213, 22) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(86, 1, 206) 50%, rgb(186, 213, 22) 50%); /* Standard syntax */
+}
+
+
+
+/* Copyright Information - Pink to Forest Green */
+#copyrightInformationBackground {
+    background-color: rgb(247, 39, 153); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(247, 39, 153) 50%, rgb(13, 201, 63) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,  rgb(247, 39, 153) 50%, rgb(13, 201, 63) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,  rgb(247, 39, 153) 50%, rgb(13, 201, 63) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,  rgb(247, 39, 153) 50%, rgb(13, 201, 63) 50%); /* Standard syntax */
+}

@@ -1,0 +1,32 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Read on My Blogs
+    
+    Start Date: March 21, 2016
+    End Date:
+    
+    File Name: Read on My Blogs.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+.exploreMoreAboutMyselfBlogPictureBlock {
+    float: left;
+    margin-right: 10px;
+}
+
+/*.exploreMoreAboutMyselfBlogsBottomSpacing {
+    margin-bottom: 80px;
+}*/
+
+.blogThumbnails {
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+}
