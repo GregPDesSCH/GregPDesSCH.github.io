@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- 
+    Gregory Desrosiers' Personal Website v2.0
+    Observe my Personality - Photo Gallery (Desktop Version)
+    
+    Start Date: February 14, 2016
+    End Date:
+    
+    File Name: Observe my Personality - Photo Gallery.html
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+-->
+
+<html>
+    <head>
+        <title>Gregory Desrosiers (UWaterloo SE 2019) - PC: Observe my Personality [Photo Gallery]</title>
+        <meta charset="UTF-8">
+        <link href="../../CSS Files/Fonts/Fonts.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Common CSS Classes.css" type="text/css" rel="stylesheet">
+        <link href="../../CSS Files/Photo Gallery.css" type="text/css" rel="stylesheet">
+        
+        <script src="../../Framework Files/jquery-2.2.1.min.js"></script>
+        <script src="../../JavaScript Files/Photo Gallery.js" id="photoGalleryScript" data-systemIndex="3"></script>
+        <script src="../../Framework Files/angular.min.js"></script>
+        <script src="../../JavaScript Files/Desktop Module.js"></script>
+        <script src="../../JavaScript Files/Desktop Menu.js"></script>
+        <script src="../../JavaScript Files/Desktop Directives.js"></script>
+    </head>
+    <body ng-app="gregoryDesrosiersPersonalWebsiteApp" class="desktopBody">
+        <h1 class="projectPaintballFontFamily centeredPageHeader" id="websiteHeader">Gregory P. Desrosiers</h1>
+        <h2 class="projectPaintballFontFamily pageHeader">Observe my Personality - Photo Gallery</h2>
+        
+        <div class="exploreMoreAboutMyselfSectionBottomSpacing" id="desktopPhotoGalleryInstructions">
+            Use the links below to select an album, then click on a thumbnail to open the photo here.
+        </div>
+        
+        
+        <!-- Selection Block -->
+        <div class="exploreMoreAboutMyselfSectionBottomSpacing">
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum1">
+                <span class="projectPaintballFontFamily">Splatoon! Stay fresh!</span>
+                <div class="albumCaption">
+                    (WARNING: There are possible spoilers in this album.)
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum2">
+                <span class="projectPaintballFontFamily">Some of the most liked Instagram photos</span>
+                <div class="albumCaption">
+                    A few photos that have received the most likes on my Instagram profile.
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum3">
+                <span class="projectPaintballFontFamily">University of Waterloo</span>
+                <div class="albumCaption">
+                    Some of the stuff that&#39;s related to my education at University of Waterloo.
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum4">
+                <span class="projectPaintballFontFamily">Volunteering Involvement</span>
+                <div class="albumCaption">
+                    A few examples of what I was involved in are shown here.
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum5">
+                <span class="projectPaintballFontFamily">Most Liked Facebook Photos</span>
+                <div class="albumCaption">
+                    These are the photos that have been liked the most on Facebook.
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum6">
+                <span class="projectPaintballFontFamily">Selfies</span>
+                <div class="albumCaption">
+                    We got ourselves too many self-posture photos here!
+                </div>
+            </div>
+            <div class="customLinkStyle photoAlbumLink" id="linkToAlbum7">
+                <span class="projectPaintballFontFamily">Some Personal Favourites</span>
+                <div class="albumCaption">
+                    Self-explanatory; an album of photos I find that are my favourite, but not duplicates of those in the other albums.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Photo Block -->
+        <div class="exploreMoreAboutMyselfSectionBottomSpacing">
+            
+            <div id="currentImageBlock">
+                <div id="desktopSelectAPhotoMessage">Why don&#39;t you pick an album and click?</div>
+                <div id="currentImageCaptionDesktop" class="projectPaintballFontFamily customLinkStyle"></div>
+                <img src="" alt="" id="desktopCurrentImageDisplayed">
+            </div>
+        </div>
+        
+        
+        <!-- Photo Thumbnail Block (involves using AngularJS) -->
+        <div class="projectPaintballFontFamily" id="loadingMessageBlock">
+        </div>
+        <div class="exploreMoreAboutMyselfSectionBottomSpacing projectPaintballFontFamily" id="thumbnailBlock">
+            Click on one of the links above to open up a group of thumbnails here.
+        </div>
+        
+        
+        <div class="exploreMoreAboutMyselfSectionBottomSpacing" id="morePhotosComingSoonBlock">
+          Don&#39;t see a photo here that you want to see? Send me an e-mail! Or, simply wait, as more photos are coming soon!
+        </div>
+        
+    </body>
+</html>

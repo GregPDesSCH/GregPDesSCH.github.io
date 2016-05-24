@@ -249,6 +249,28 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
 }
 
+.photoAlbumLinkWiiU {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.photoAlbumLinkWiiU .albumCaption {
+    font-size: 0.9em;
+}
+
+.footerBarCopyrightLinksWiiU {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#websiteHeaderMiitomoPageWiiU {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
 
 
 
@@ -380,7 +402,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
+
 /* Responsive media queries */
+
+/*.responsiveBody {
+    width: 100%;
+}*/
 
 @media only screen and (max-device-width: 550px) {
     
@@ -730,6 +760,11 @@ h1, h2, h3, h4, h5, h6 {
     
     #responsiveSpecialSymbolsGroup .rightSideOfIntroductorySectionSymbols {
         font-size: 2em;
+    }
+    
+    #miitomoQRCodeResponsiveVersion {
+        height: auto;
+        width: 100%;
     }
     
     /*.socialNetworkingLinksNoticesResponsive, .photoCopyrightsBlocksResponsive {
