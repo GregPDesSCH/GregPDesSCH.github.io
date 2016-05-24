@@ -24,7 +24,8 @@ var ORIGINAL_ALBUMS_WII_U_PHOTO_DIRECTORY = "../../Photos/Albums (Wii U)/",
     ORIGINAL_ALBUMS_PC_PHOTO_DIRECTORY = "../../Photos/Albums (PC)/",
     ORIGINAL_ALBUM_THUMBNAILS_WII_U_PHOTO_DIRECTORY = "../../Photos/Thumbnails (Wii U)/",
     ORIGINAL_ALBUM_THUMBNAILS_RESPONSIVE_PHOTO_DIRECTORY = "../../Photos/Thumbnails (Responsive)/",
-    ORIGINAL_ALBUM_THUMBNAILS_PC_PHOTO_DIRECTORY = "../../Photos/Thumbnails (PC)/";
+    ORIGINAL_ALBUM_THUMBNAILS_PC_PHOTO_DIRECTORY = "../../Photos/Thumbnails (PC)/",
+    JSON_FILE_DIRECTORY = "../../Photos/JSON Object Files/";
 
 var ALBUM_1_DIRECTORY = "Album 1 - Splatoon! Stay fresh!/",
     ALBUM_2_DIRECTORY = "Album 2 - Some of the most liked Instagram photos/",
@@ -33,6 +34,14 @@ var ALBUM_1_DIRECTORY = "Album 1 - Splatoon! Stay fresh!/",
     ALBUM_5_DIRECTORY = "Album 5 - Most Liked Facebook Photos/",
     ALBUM_6_DIRECTORY = "Album 6 - Selfies/",
     ALBUM_7_DIRECTORY = "Album 7 - Some Personal Favourites/";
+
+var ALBUM_1_JSON_FILE = "Album 1.json",
+    ALBUM_2_JSON_FILE = "Album 2.json",
+    ALBUM_3_JSON_FILE = "Album 3.json",
+    ALBUM_4_JSON_FILE = "Album 4.json",
+    ALBUM_5_JSON_FILE = "Album 5.json",
+    ALBUM_6_JSON_FILE = "Album 6.json",
+    ALBUM_7_JSON_FILE = "Album 7.json";
     
 
 // System Variable
@@ -80,19 +89,19 @@ function loadUpThumbnails(albumIndex)
     
     
     if (albumIndex == albumSelection.ALBUM_1_SPLATOON_STAY_FRESH)
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_1_DIRECTORY, albumDirectory + ALBUM_1_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_1_DIRECTORY, albumDirectory + ALBUM_1_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_1_JSON_FILE);
     else if (albumIndex == albumSelection.ALBUM_2_SOME_OF_THE_MOST_LIKED_INSTAGRAM_PHOTOS)    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_2_DIRECTORY, albumDirectory + ALBUM_2_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_2_DIRECTORY, albumDirectory + ALBUM_2_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_2_JSON_FILE);
     else if (albumIndex == albumSelection.ALBUM_3_UNIVERSITY_OF_WATERLOO)    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_3_DIRECTORY, albumDirectory + ALBUM_3_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_3_DIRECTORY, albumDirectory + ALBUM_3_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_3_JSON_FILE);
     else if (albumIndex == albumSelection.ALBUM_4_VOLUNTEERING_INVOLVEMENT)    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_4_DIRECTORY, albumDirectory + ALBUM_4_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_4_DIRECTORY, albumDirectory + ALBUM_4_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_4_JSON_FILE);
     else if (albumIndex == albumSelection.ALBUM_5_MOST_LIKED_FACEBOOK_PHOTOS)    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_5_DIRECTORY, albumDirectory + ALBUM_5_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_5_DIRECTORY, albumDirectory + ALBUM_5_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_5_JSON_FILE);
     else if (albumIndex == albumSelection.ALBUM_6_SELFIES)    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_6_DIRECTORY, albumDirectory + ALBUM_6_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_6_DIRECTORY, albumDirectory + ALBUM_6_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_6_JSON_FILE);
     else    
-        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_7_DIRECTORY, albumDirectory + ALBUM_7_DIRECTORY);
+        loadUpThumbnailsForAlbums(thumbnailDirectory + ALBUM_7_DIRECTORY, albumDirectory + ALBUM_7_DIRECTORY, JSON_FILE_DIRECTORY + ALBUM_7_JSON_FILE);
     
     
 }
@@ -101,10 +110,11 @@ function loadUpThumbnails(albumIndex)
     This function loads up all the thumbnails for the album requested.
     Code inspired by the following: http://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery
 */
-function loadUpThumbnailsForAlbums(thumbnailDirectory, albumDirectory) 
+function loadUpThumbnailsForAlbums(thumbnailDirectory, albumDirectory, jsonFileDirectory) 
 {
     console.log("Thumbnail directory: " + thumbnailDirectory);
     console.log("Album directory: " + albumDirectory);
+    console.log("JSON File Directory: " + jsonFileDirectory);
     
     $("#loadingMessageBlock").text("Now loading...");
     
@@ -112,107 +122,101 @@ function loadUpThumbnailsForAlbums(thumbnailDirectory, albumDirectory)
     var listOfActualPhotoLocations = [], regexp = new RegExp("\.png|\.jpg"), arrayIndex = 0;
     //console.log(albumDirectory);
     
+    
+    /* 
+        This is where we perform the requests to get the URLs for the thumbnail and album directories,
+        as well as putting together the thumbnail elements where the image's source is the URL for the
+        thumbnail, and one attribute of each element holds the URL to the actual picture in the album.
+    */
+    
     // Use the when-and-then method calls to control the sequence of calls to make them synchronous.
     // http://stackoverflow.com/questions/6250022/waiting-for-jquery-ajax-responses
-    $.when(
-        $.ajax({
-            //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-            url: albumDirectory,
-            success: function (albumData) {
-                //console.log(albumData);
-                $(albumData).find("a").filter(function () {return regexp.test($(this).text());}).each(function () {
-                    //console.log($(this).html());
-                    //var albumPictureFilename = this.href.replace(window.location.host, "").replace("http://", "");
-                    //console.log("File Name: " + albumPictureFilename);
-                    listOfActualPhotoLocations.push(albumDirectory + $(this).html());
-                    //console.log(listOfActualPhotoLocations);
-                });
-                
+    
+    $.ajax({
+        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+        url: jsonFileDirectory,
+        success: function (albumData) {
+            console.log("Album Calls Directory: " + albumData);
+            console.log("Album Calls Files: " + albumData.imageFiles);
+            console.log("Album Calls Files: " + albumData.imageFiles);
+            /*$(albumData).find("a").filter(function () {return regexp.test($(this).text());}).each(function () {
+                //console.log($(this).html());
+                //var albumPictureFilename = this.href.replace(window.location.host, "").replace("http://", "");
+                //console.log("File Name: " + albumPictureFilename);
+                console.log(albumDirectory + $(this).html());
+                listOfActualPhotoLocations.push(albumDirectory + $(this).html());
                 //console.log(listOfActualPhotoLocations);
-            }
-        })
-    ).then(function() {
-            //console.log("Array index: " + arrayIndex);
+            });*/
 
-            $.ajax({
-                //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-                url: thumbnailDirectory,
-                success: function (data) {
-                    //console.log(data);
-                    //List all .png file names in the page
-                    $(data).find("a").filter(function () {return regexp.test($(this).text());}).each(function () {
-                        //console.log($(this).html());
-                        //console.log(this.href);
-                        //console.log(this.href);
-                        //var filename = this.href.replace(window.location.host, "").replace("http://", "");
-                        //console.log("File Name: " + filename);
-
-                        
-                        if (currentSystemUsedForDisplayingTheWebsite === systemsForWebsite.WII_U)
-                            $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\">" +
-                                                            "<div class=\"thumbnails\" photoHref='" + listOfActualPhotoLocations[arrayIndex] + "'>" +
-                                                                "<img src='" + thumbnailDirectory + $(this).html() + "' alt='"  + thumbnailDirectory + $(this).html() +  "' />" + 
-                                                            "</div>" +
-                                                        "</div>").load();
-                        else if (currentSystemUsedForDisplayingTheWebsite === systemsForWebsite.RESPONSIVE)
-                            $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\">" +
-                                                            "<div class=\"responsiveThumbnails\" photoHref='" + listOfActualPhotoLocations[arrayIndex] + "'>" +
-                                                                "<img src='" + thumbnailDirectory + $(this).html() + "' alt='"  + thumbnailDirectory + $(this).html() +  "' />" + 
-                                                            "</div>" +
-                                                        "</div>").load();
-                        else
-                            $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\"  >" +
-                                                            "<div class=\"desktopThumbnails\" photoHref='" + listOfActualPhotoLocations[arrayIndex] + "' ng-click=\"respondToPhotoThumbnailClick()\">" +
-                                                                "<img src='" + thumbnailDirectory + $(this).html() + "' alt='"  + thumbnailDirectory + $(this).html() +  "' />" + 
-                                                            "</div>" +
-                                                        "</div>").load();
-                        
-                        arrayIndex++;
-
-                        /*var downloadingImage = new Image();
-                        downloadingImage.onload = function(){
-                            console.log("Hello?");
-                            $("#thumbnailBlock").append("<div>" +
-                                                    "<a href=''>" +
-                                                    "<img src='" + this.src + "' alt='" + this.src + "' />" + 
-                                                    "</a>" +
-                                                    "</div>").load();
-                        };
-                        downloadingImage.src = filename;*/
-                    });
-                    
-                    /* Display the caption that tells the user which album is opened. */
-                    var currentAlbumOpenedCaption = "";
-                    
-                    if (currentAlbumOpened == albumSelection.ALBUM_1_SPLATOON_STAY_FRESH)
-                        currentAlbumOpenedCaption = "Splatoon! Stay fresh!";
-                    else if (currentAlbumOpened == albumSelection.ALBUM_2_SOME_OF_THE_MOST_LIKED_INSTAGRAM_PHOTOS)
-                        currentAlbumOpenedCaption = "Some of the most liked Instagram photos";
-                    else if (currentAlbumOpened == albumSelection.ALBUM_3_UNIVERSITY_OF_WATERLOO)
-                        currentAlbumOpenedCaption = "University of Waterloo";
-                    else if (currentAlbumOpened == albumSelection.ALBUM_4_VOLUNTEERING_INVOLVEMENT)
-                        currentAlbumOpenedCaption = "Volunteering Involvement";
-                    else if (currentAlbumOpened == albumSelection.ALBUM_5_MOST_LIKED_FACEBOOK_PHOTOS)
-                        currentAlbumOpenedCaption = "Most Liked Facebook Photos";
-                    else if (currentAlbumOpened == albumSelection.ALBUM_6_SELFIES)
-                        currentAlbumOpenedCaption = "Selfies";
-                    else
-                        currentAlbumOpenedCaption = "Some Personal Favourites";
-                    
-                        
-                    $("#loadingMessageBlock").text("Current Album opened: " + currentAlbumOpenedCaption);
-                    
-                    /* 
-                        Perform a quick animation so that the user can see the thumbnails.
-                        http://stackoverflow.com/questions/6677035/jquery-scroll-to-element 
-                    */
-                    $('html, body').animate({
-                        scrollTop: $("#thumbnailBlock").offset().top
-                    }, 500);
-                }
+            $.each(albumData.imageFiles, function(index, value) {
+                console.log("Current File:" + value);
+                listOfActualPhotoLocations.push();
+                
+                if (currentSystemUsedForDisplayingTheWebsite === systemsForWebsite.WII_U)
+                    $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\">" +
+                                                    "<div class=\"thumbnails\" photoHref='" + albumDirectory + value + "'>" +
+                                                        "<img src='" + thumbnailDirectory + value + "' alt='"  + thumbnailDirectory + value +  "' />" + 
+                                                    "</div>" +
+                                                "</div>").load();
+                else if (currentSystemUsedForDisplayingTheWebsite === systemsForWebsite.RESPONSIVE)
+                    $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\">" +
+                                                    "<div class=\"responsiveThumbnails\" photoHref='" + albumDirectory + value + "'>" +
+                                                        "<img src='" + thumbnailDirectory + value + "' alt='"  + thumbnailDirectory + value +  "' />" + 
+                                                    "</div>" +
+                                                "</div>").load();
+                else
+                    $("#thumbnailBlock").append("<div class=\"photoGalleryThumbnails\"  >" +
+                                                    "<div class=\"desktopThumbnails\" photoHref='" + albumDirectory + value + "' ng-click=\"respondToPhotoThumbnailClick()\">" +
+                                                        "<img src='" + thumbnailDirectory + value + "' alt='"  + thumbnailDirectory + value +  "' />" + 
+                                                    "</div>" +
+                                                "</div>").load();
             });
+
+            //console.log(listOfActualPhotoLocations);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Display the caption that tells the user which album is opened. */
+            var currentAlbumOpenedCaption = "";
+
+            if (currentAlbumOpened == albumSelection.ALBUM_1_SPLATOON_STAY_FRESH)
+                currentAlbumOpenedCaption = "Splatoon! Stay fresh!";
+            else if (currentAlbumOpened == albumSelection.ALBUM_2_SOME_OF_THE_MOST_LIKED_INSTAGRAM_PHOTOS)
+                currentAlbumOpenedCaption = "Some of the most liked Instagram photos";
+            else if (currentAlbumOpened == albumSelection.ALBUM_3_UNIVERSITY_OF_WATERLOO)
+                currentAlbumOpenedCaption = "University of Waterloo";
+            else if (currentAlbumOpened == albumSelection.ALBUM_4_VOLUNTEERING_INVOLVEMENT)
+                currentAlbumOpenedCaption = "Volunteering Involvement";
+            else if (currentAlbumOpened == albumSelection.ALBUM_5_MOST_LIKED_FACEBOOK_PHOTOS)
+                currentAlbumOpenedCaption = "Most Liked Facebook Photos";
+            else if (currentAlbumOpened == albumSelection.ALBUM_6_SELFIES)
+                currentAlbumOpenedCaption = "Selfies";
+            else
+                currentAlbumOpenedCaption = "Some Personal Favourites";
+
+
+            $("#loadingMessageBlock").text("Current Album opened: " + currentAlbumOpenedCaption);
+
+            /* 
+                Perform a quick animation so that the user can see the thumbnails.
+                http://stackoverflow.com/questions/6677035/jquery-scroll-to-element 
+            */
+            $('html, body').animate({
+                scrollTop: $("#thumbnailBlock").offset().top
+            }, 500);
+            
+            
         }
-    );
+    });
+    
     
 }
 
