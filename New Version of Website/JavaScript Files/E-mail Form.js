@@ -33,6 +33,10 @@ var currentMessageTypeIndex = currentMessageType.COMMENT;
 function updateEmailForm() {
     "use strict";
     
+    $("#contactMeWarningMessages").html("");
+    $("#contactMeSendingStatus").html("");
+    $(".inputMissingBorder").removeClass("inputMissingBorder");
+    
      /* Checkboxes */
     if ($("#sendAsAnonymousCheckbox").is(':checked'))
     {
@@ -50,11 +54,15 @@ function updateEmailForm() {
     {
         if ($("#sendAsAnonymousCheckbox").is(':checked'))
             $("#eMailAddressBlock").show();
+        
+        return;
     }
     else
     {
-        if ($("#sendAsAnonymousCheckbox").is(':checked')) 
+        if ($("#sendAsAnonymousCheckbox").is(':checked'))
             $("#eMailAddressBlock").hide();
+        
+        return;
     }
     
     /* Radio Buttons */
@@ -313,7 +321,7 @@ $(function () {
         
         
         /* Is the subject field empty? */
-        if ($("#subjectTextField").val().trim().length === 0 && (($("#typeOfPublicRelationsComboBox").val() == "other" && currentMessageTypeIndex == currentMessageType.PUBLIC_RELATIONS) || (currentMessageTypeIndex == currentMessageType.BUSINESS_INQUIRY && $("#typeOfBusinessInquiryComboBox").val() == "other")))
+        if ($("#subjectTextField").val().trim().length === 0 && (($("#typeOfPublicRelationsComboBox").val() === "Other" && currentMessageTypeIndex === currentMessageType.PUBLIC_RELATIONS) || (currentMessageTypeIndex === currentMessageType.BUSINESS_INQUIRY && $("#typeOfBusinessInquiryComboBox").val() === "Other")))
         {
             $("#subjectTextField").addClass("inputMissingBorder");
             addHeaderToErrorMessages();
