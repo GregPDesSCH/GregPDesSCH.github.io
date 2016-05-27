@@ -1,0 +1,29 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Credits - CSS Stylesheet
+    
+    Start Date: April 2, 2016
+    End Date: May 27, 2016
+    
+    File Name: credits.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+#creditsLinksSection {
+    margin-bottom: 40px;
+}
+
+.creditsSectionSpacing {
+    margin-bottom: 40px;
+}
+
+.creditsSubsectionSpacing {
+    margin-bottom: 10px;
+}

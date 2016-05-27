@@ -1,0 +1,44 @@
+Gregory Desrosiers' Personal Website v2.0
+Copyrights
+
+
+Website Design, Hosting and Tools
+
+Source Code and Website Design 
+© 2016 Gregory Desrosiers
+
+Website is hosted on a GitHub Pages domain offered exclusively by GitHub, Inc.
+© 2016 GitHub, Inc.
+
+Developed using Adobe Brackets
+© 2012 - 2015 Adobe Systems Incorporated and its licensors. All rights reserved.
+
+Tested on Microsoft Edge, Mozilla Firefox, and Google Chrome.
+
+
+
+User Interface
+
+Font Family and Background inspired by Nintendo's Splatoon
+Splatoon © 2015 Nintendo. Splatoon and the Wii U are trademarks owned by Nintendo. All rights reserved. 
+
+Icons (Font Awesome)
+© 2016 Dave Gandy.
+
+
+Content
+
+Miiverse © 2016 Nintendo. Miiverse and the Miiverse logo are trademarks and / or copyrighted material owned by Nintendo. All rights reserved.
+
+Following companies and associations are recognized for having content hosted here that is owned by them: 
+University of Waterloo, Columbia Pictures, Rovio Entertainment Ltd., Nintendo, Square Enix Co. Ltd., Global Montreal, Capcom, Riverside School Board, DC Comics, Metallica, Namco Bandai Games, Inc., Hasbro
+
+
+Website Logo & Home Page Link Logos
+Designed by Freepik, provided by Graphic Resources S.L. 
+Link: 
+Copyright © 2010-2016 Graphic Resources LLC. All screenshots © their respective owners. 
+
+
+
+All other content, imagery, website design, frameworks and/or imagery are trademarks and/or copyrighted material of their respective owners. All rights reserved.

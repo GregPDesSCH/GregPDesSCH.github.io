@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--
+    Gregory Desrosiers - Personal Website
+
+    Resume / CV
+
+    Start Date: February 26, 2015
+    End Date: March 21, 2015
+
+    Coded by Gregory Desrosiers
+
+    With Support from the following:
+    Dave Pagurek Van Mossel
+    Abhishek Madan
+    Mohammed Bilal Akhtar
+    Cora Lam
+    Deon Hua
+	Andrew Codisporti
+	
+	Preview Feedback:
+	Santino Maguire
+	Collin Fair
+	Sadman Sazid
+	
+    University of Waterloo - Software Engineering Class of 2019
+
+    External Supporters:
+    Ho Man Chan
+
+    File: Home Page.html
+    Programming Languages: HTML 5, CSS 3
+
+    © 2015 Gregory Desrosiers. All rights reserved.
+
+-->
+
+<html>
+    <head>
+        <title>Gregory Desrosiers (uWaterloo) - Resume / CV</title>
+	<link rel="stylesheet" type="text/css" href="../Website Theme.css">
+	<link rel="icon" href="../Site Favicon.ico" type="image/ico">
+    </head>
+    <body>
+        <h1><a id="nameAtTopOfPage" href="Home%20Page.html">Gregory P. Desrosiers</a></h1>
+        <h3>1B Software Engineering, University of Waterloo</h3>
+        <br/>
+        <div id="websiteMenu"><a href="Home%20Page.html" class="linkMenu">Home</a>
+            <a href="About%20Me.html" class="linkMenu">About Me</a>
+            <a href="About%20Me%20-%20Portfolio.html" class="linkMenu">Portfolio</a>
+            <a href="About%20Me%20-%20Education.html" class="linkMenu">Education</a>
+            <a href="About%20Me%20-%20Timeline%20of%20Achievements.html" class="linkMenu">Achievements</a>
+            <a href="Resume.html" class="linkMenu">Resume</a>
+            <a href="GitHub%20Repository.html" class="linkMenu">GitHub Repository</a>
+            <a href="Blog%20Postings.html" class="linkMenu">Blog Postings</a>
+            <a href="Follow%20Me.html" class="linkMenu">Follow Me</a>
+            <a href="Credits%20Page.html" class="linkMenu">Credits</a></div></div>
+        <br/>
+        <div class="mainText">
+            <h2>Resume / CV</h2>
+            Below is my personal resume.<br/><br/><br/><br/>
+            
+            <h3>GREGORY DESROSIERS</h3><br/>
+            <p class="boldHeadings">1B Software Engineering, University of Waterloo</p><br/><br/>
+            gdesrosi@uwaterloo.ca<br/>
+            <a class="incorporatedMainTextLinks" href="ca.linkedin.com/in/gregorydesrosiers">ca.linkedin.com/in/gregorydesrosiers</a>
+            <br/><br/><br/><br/>
+            
+            
+            <p class="boldHeadings">SKILLS</p>
+            <ul>
+                <li>Two years' experience with Java</li>
+                <li>Comfortable with C, C++, HTML, CSS, and Python</li>
+                <li>Eager to learn new programming languages and their practical applications</li>
+                <li>Passion for creating solutions to programs</li>
+            </ul><br/>
+            
+            
+            <p class="boldHeadings">EDUCATION</p>
+            Candidate for Bachelor of Software Engineering, Honours Software Engineering<br/>
+            University of Waterloo, Waterloo, Ontario<br/>
+            September 2014 - Present <br/><br/>
+            
+            Quebec Diploma of Collegial Studies, Computer Science and Mathematics<br/>
+            Champlain College Saint-Lambert,  Saint-Lambert, Quebec<br/>
+            September 2011 - June 2014<br/><br/>
+            
+            Relevant Courses: Integrative Project in Computer Science and Mathematics; Program Development in a Graphical Environment; Electricity and Magnetism; Waves, Optics and Modern Physics; and Mechanics<br/><br/><br/>
+            
+            
+            <p class="boldHeadings">RELEVANT PROJECTS</p>
+            Caffeine Hunter, Introduction to Methods of Software Engineering, October – November 2014
+            <br/>
+            <ul>
+                <li>Worked on coding a Scribbler robot to detect and move towards pop cans using Python</li>
+		<li>Recorded progression on the project design, implementation, and testing, on Microsoft Word</li>
+		<li>Collaborated with five different partners</li>
+            </ul>
+            
+            The Desrosiers Mechanics Teaching Tool, Integrative Project in Computer Science and
+            Mathematics, January - April 2014<br/>
+            <ul>
+                <li>Developed a Java application, using OOP, Eclipse and NetBeans IDEs, to demonstrate vectors and kinematics</li>
+                <li>Documented project initiative, design and final results</li>
+            </ul>
+            <br/><br/>
+
+
+            <p class="boldHeadings">WORK EXPERIENCE</p>
+            Data Entry Clerk, AntOro Resources, Inc., Montreal, Quebec, July – August 2010<br/>
+                <ul>
+                    <li>Inputted and organized shareholders' information into spreadsheets using Microsoft Excel</li>
+                    <li>Maintained geological reports from mining explorations</li>
+                </ul>
+            <br/>
+
+
+            <p class="boldHeadings">VOLUNTEER EXPERIENCE</p>
+            Volunteer, Champlain College Saint-Lambert, Saint-Lambert, Quebec, February 2014<br/>
+            Updated presentation files on services offered by the Disability Office<br/>
+            Translated the files from English to French
+            <br/><br/>
+
+            Awareness Speaker, Champlain Student Association, Champlain College Saint-Lambert, Saint-Lambert, Quebec, May 2013<br/>
+            Co-organized and conducted speech presentation on Asperger's syndrome and autism to raise awareness to an audience of 40 people<br/><br/><br/>
+
+
+            <p class="boldHeadings">AWARDS &amp; SCHOLARSHIPS</p>
+
+            University of Waterloo Admission Merit Scholarship<br/>
+            University of Waterloo, Waterloo, Ontario, April 2014<br/><br/>
+
+            High School Honour Roll Student <br/>
+            Heritage Regional High School, Saint-Hubert, Quebec, September 2008 - June 2011<br/><br/>
+
+            Black History Month Variety Show Bursary<br>
+            Heritage Regional High School, June 2011 <br/><br/>
+
+
+        </div>
+	<br/><br/>
+	<div id="copyrightInfo">
+		Source Code &copy; 2015 Gregory Desrosiers. All rights reserved. Produced at University of Waterloo.
+	</div>
+    </body>
+    
+</html>

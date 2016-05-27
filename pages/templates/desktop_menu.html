@@ -1,0 +1,47 @@
+<div id="desktopMenu">
+    <div class="desktopMenuImageBlock" id="desktopMenuGoToHomePageButton" data-ng-mouseenter="respondToMouseOverNavigationButton(0)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClick(1)">
+        <img src="../../sprites/navigation/G.png" alt="G">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuResumeButton" data-ng-mouseover="respondToMouseOverNavigationButton(1)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClick(2)">
+        <img src="../../sprites/navigation/R.png" alt="R">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuExploreMoreAboutMyself" data-ng-mouseover="respondToMouseOverNavigationButton(2)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClickOnExploreMoreAboutMyself()">
+        <img src="../../sprites/navigation/E.png" alt="E">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuGitHubRepositoriesAndPortfolio" data-ng-mouseover="respondToMouseOverNavigationButton(3)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClick(6)">
+        <img src="../../sprites/navigation/G.png" alt="G">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuObserveMyPersonality" data-ng-mouseover="respondToMouseOverNavigationButton(4)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClickOnObserveMyPersonality()">
+        <img src="../../sprites/navigation/O.png" alt="O">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuReadMyBlogs" data-ng-mouseover="respondToMouseOverNavigationButton(5)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClick(9)">
+        <img src="../../sprites/navigation/R.png" alt="R">
+    </div>
+
+    <div class="desktopMenuImageBlock" id="desktopMenuYouBetterContactMe" data-ng-mouseover="respondToMouseOverNavigationButton(6)" data-ng-mouseleave="respondToMouseExitNavigationButton()" data-ng-click="respondToMouseClick(10)">
+        <img src="../../sprites/navigation/Y.png" alt="Y">
+    </div>
+</div>
+
+<div id="desktopSelectionPane">
+    <div id="desktopHoverOverLabelForAMenuButton" class="projectPaintballFontFamily">
+    </div>
+
+    <div id="desktopExtraPagesBlock">
+        <div id="desktopExtraPagesHeader" data-ng-show="showMeLinksForExploreMoreAboutMyself || showMeLinksForObserveMyPersonality">Choose a page:</div>
+        <div id="desktopExploreMoreAboutMyselfLinks" class="desktopMenuSubmenu" data-ng-show="showMeLinksForExploreMoreAboutMyself">
+            <div class="customLinkStyle" data-ng-click="respondToMouseClick(3)">About Me</div>
+            <div class="customLinkStyle" data-ng-click="respondToMouseClick(4)">Education History</div>
+            <div class="customLinkStyle" data-ng-click="respondToMouseClick(5)">Portfolio of Projects</div>
+        </div>
+        <div id="desktopObserveMyPersonalityLinks" class="desktopMenuSubmenu" data-ng-show="showMeLinksForObserveMyPersonality">
+            <div class="customLinkStyle" data-ng-click="respondToMouseClick(7)">FAQ</div>
+            <div class="customLinkStyle" data-ng-click="respondToMouseClick(8)">Photo Gallery</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1624 @@
+/* 
+    Gregory Desrosiers' Personal Website v2.0
+    Common CSS Classes
+    
+    Start Date: February 29, 2016
+    End Date: May 27, 2016
+    
+    File Name: common_css_classes.css
+    
+    
+    
+    Coding by Gregory Desrosiers
+    
+    Please see the Copyright file for info on copyrights.
+    
+    © 2016 Gregory Desrosiers. All rights reserved.
+*/
+
+#navigationBlock {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.navigationMenuIcon {
+    font-family: "Font Awesome";
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: -2px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#wiiUVersionNavigationMenuIcon {
+    width: 50px;
+}
+
+
+
+.menuBlock, .menuBlockResponsive {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+}
+
+
+
+#wiiUVersionNavigationMenuBlock {
+    padding: 10px;
+    position: fixed;
+    top: 38px;
+    width: auto;
+}
+
+#responsiveVersionNavigationMenuIcon {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#responsiveVersionNavigationMenuBlock {
+    text-align: center;
+    width: 100%;
+}
+
+.resumeResponsiveLinkBlocksResponsive, .exploreMoreAboutMeLinkBlocksResponsive, .observeMyPersonalityFAQLinkBlocksResponsive {
+    overflow:hidden;
+}
+
+#miitomoQRCodeBlock {
+    text-align: center;
+}
+
+#miitomoQRCodeWiiUVersion {
+    width: auto;
+    height: 420px;
+}
+
+
+/* */
+#responsiveMenuBlock {
+    font-size: 28px;
+}
+
+
+
+.responsiveSpecialMenuSection {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+
+
+.technicalExperienceLeftSideResponsive {
+    float: left;
+}
+
+.technicalExperienceRightSideResponsive {
+    float: right;
+}
+
+
+.followMeBlock {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: -2px;
+}
+
+
+#followMeLinksBlockResponsive {
+    /*position: fixed;
+    left: 0px;
+    bottom: 0px;*/
+    width: 100%;
+    text-align: center;
+    display: table;
+    /*z-index: 1;*/
+}
+
+.centeredPageHeader {
+    text-align: center;
+}
+
+.pageHeader {
+    margin-bottom: 60px;
+}
+
+.customLinkStyle {
+    text-decoration:none;
+    color: brown;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    cursor: pointer;
+}
+
+
+
+.customLinkStyle:visited {
+    color: brown;
+}
+
+.customLinkStyle:hover {
+    color: red;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s; 
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+#footerBarWiiU, #footerBarResponsive {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#footerBarResponsive {
+    margin-bottom: 70px;
+}
+
+
+
+.footerBarCopyrightLinks {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inputTextField {
+    width: 375px;
+}
+
+/* Common CSS Classes */
+body {
+    font-family: "Gill Sans MT", "Helvetica", "Times New Roman", "Cambria", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/*h4 {
+    font-size: 20px;
+}*/
+
+.wiiUFollowMeBlocks, .responsiveFollowMeBlocks {
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+
+.exploreMoreAboutMyselfBottomSpacing {
+    margin-bottom: 20px;
+}
+
+.exploreMoreAboutMyselfSectionBottomSpacing {
+    margin-bottom: 55px;
+}
+
+.menuBlockLink {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.photoAlbumLink {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.albumCaption {
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* Wii U */
+
+#personalQuoteAndMaximWiiU {
+    font-size: 1.2em;
+}
+
+#personalQuoteAndMaximSourceWiiU {
+    font-size: 0.8em;
+}
+
+#followMeLinksBlockWiiU{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.photoAlbumLinkWiiU {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.photoAlbumLinkWiiU .albumCaption {
+    font-size: 0.9em;
+}
+
+.footerBarCopyrightLinksWiiU {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#websiteHeaderMiitomoPageWiiU {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+
+#personalQuoteAndMaximResponsive{
+    font-size: 1.4em;
+}
+
+#personalQuoteAndMaximSourceResponsive{
+    font-size: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop CSS */
+
+#desktopMenu, #desktopHoverOverLabelForAMenuButton, #desktopExploreMoreAboutMyselfLinks, #desktopObserveMyPersonalityLinks, #desktopExtraPagesHeader, #footerBarDesktop {
+    text-align: center;
+}
+
+#footerBarDesktop {
+    margin-top: 3%;
+}
+
+#desktopSelectionPane {
+    margin-bottom: 2%;
+}
+
+#desktopCurrentImageDisplayed {
+    display: none;
+}
+
+.desktopMenuImageBlock {
+    display: inline-block;
+}
+
+#desktopExploreMoreAboutMyselfLinks div, #desktopObserveMyPersonalityLinks div {
+    display: inline;
+}
+
+#desktopCurrentImageDisplayed {
+    border-style: ridge;
+    border-color: red;
+    border-width: 4px;
+}
+
+#introductorySectionDesktop {
+    display: table;
+    width: 100%;
+}
+
+#introductorySectionDesktop #leftSideOfIntroductorySection,
+#introductorySectionDesktop #rightSideOfIntroductorySection {
+    text-align: center;
+    width: 50%;
+    display: table-cell;
+}
+
+#introductorySectionDesktop #rightSideOfIntroductorySection {
+    vertical-align: middle;
+}
+
+#introductorySectionDesktop #pictureCarouselLeftButtonSet, 
+#introductorySectionDesktop #pictureCarouselRightButtonSet {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(128, 128, 128, 0.2); /* http://stackoverflow.com/questions/10422949/css-background-opacity */
+    cursor: pointer;
+    
+    /* http://stackoverflow.com/questions/10995165/css-opposite-of-hover-on-mouse-leave */
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s; 
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+#introductorySectionDesktop #pictureCarouselLeftButtonSet:hover, 
+#introductorySectionDesktop #pictureCarouselRightButtonSet:hover {
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s; 
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#pictureCarouselLeftButtonBackground {
+    display: inline-block;
+    position: relative;
+    left: -7.5px;
+    top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid black;
+    vertical-align: middle;
+}
+
+#pictureCarouselRightButtonBackground {
+    display: inline-block;
+    position: relative;
+    left: 7.5px;
+    top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid black;
+    vertical-align: middle;
+}
+
+
+#personalQuoteAndMaximDesktop {
+    font-size: 1.2em;
+}
+
+
+#personalQuoteAndMaximSourceDesktop {
+    font-size: 0.85em;
+}
+
+
+
+
+
+
+
+
+/* Responsive media queries */
+
+/*.responsiveBody {
+    width: 100%;
+}*/
+
+@media only screen and (max-device-width: 550px) {
+    
+    .resumeResponsiveLinkBlocksResponsive, .exploreMoreAboutMeLinkBlocksResponsive, .observeMyPersonalityFAQLinkBlocksResponsive {
+        height: 40px;
+        margin-top: 30px;
+    }
+    
+    #responsiveCurrentImageDisplayed {
+        height: 1.4em;
+    }
+    
+    .pageNavigationResponsiveLinks div a {
+        font-size: 50px;
+    }
+    
+    #personalCatchphraseResponsive {
+        font-size: 1.3em;
+    }
+    
+    #homePageSubheadingResponsive {
+        font-size: 28px;
+        margin-top: 0.5em;
+    }
+    
+    #pictureCarouselLeftButtonSetResponsive, #pictureCarouselRightButtonSetResponsive{
+        height: 4em;
+        width: 2.5em;
+    }
+    
+    
+    #pictureCarouselLeftButtonBackgroundResponsive,
+    #pictureCarouselRightButtonBackgroundResponsive {
+        top: 1.4em;
+    }
+    
+    #responsivePictureComponent {
+        width: 80%;
+    }
+    
+    .responsiveHomePagePhotos {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #responsivePageBodyBlock {
+        margin-top: 1em;
+    }
+    
+    #responsiveVersionNavigationMenuIcon {
+        font-size: 2em;
+    }
+    
+    .menuBlockResponsive {
+        top: 2.25em;
+    }
+    
+    #responsiveMenuBlock {
+        font-size: 1.5em;
+    }
+    
+    .responsiveBody {
+        font-size: 2em;
+    }
+    
+    #sectionAboveResumeHeaderResponsive {
+        font-size: 1.2em;
+    }
+    
+    .resumeHeadlineTextResponsive {
+        font-size: 1.4em;
+    }
+    
+    .technologiesBlock {
+        font-size: 1.5em;
+    }
+    
+    /*.resumeSection div, #skillsAndQualificationsSection {
+        font-size: 1.05em;
+    }*/
+    
+    #photoGalleryResponsiveSelectionBlock .photoAlbumLink {
+        margin-bottom: 0.8em;
+        margin-top: 0.8em;
+        font-size: 1.1em;
+    }
+    
+    #photoGalleryResponsiveSelectionBlock .albumCaption {
+        font-size: 0.65em;
+    }
+    
+    #downloadLinkResponsive {
+        font-size: 1.2em;
+    }
+    
+    #resumeHeaderNameResponsive {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    
+    #resumeHeaderResponsive {
+        text-align: center;
+        font-size: 1.35em;
+    }
+    
+    #resumeHeaderTopBlockResponsive {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #resumeHeaderBottomBlockResponsive {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #sectionAboveResumeHeaderResponsive div, #exploreMoreAboutMeResponsive div, #exploreMoreEducationHistoryResponsive div, #exploreMorePortfolioOfProjectsResponsive div, #observeMyPersonalityResponsive div {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    .footerBarCopyrightLinks {
+        font-size: 2em;
+    }
+    
+    #responsiveCopyrightNoticeBlock {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    
+    #followMeLinksBlockResponsive {
+        height: 2.5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+    
+    .responsiveFollowMePictures {
+        height: 100%;
+        vertical-align: center;
+    }
+    
+    #responsiveSpecialSymbolsGroup {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    
+    
+    #pictureCarouselLeftButtonSetResponsive, #pictureCarouselRightButtonSetResponsive{
+        width: 2.5em;
+        height: 5em;
+    }
+
+    #pictureCarouselLeftButtonBackgroundResponsive {
+        border-top: 2.5em solid transparent;
+        border-bottom: 2.5em solid transparent;
+        border-right: 2em solid black;
+    }
+
+    #pictureCarouselRightButtonBackgroundResponsive {
+        border-top: 2.5em solid transparent;
+        border-bottom: 2.5em solid transparent;
+        border-left: 2em solid black;
+    }
+    
+    
+    .footerBarCopyrightLinks {
+        font-size: 2.75em;
+    }
+    
+    
+    .responsiveHomePictureCarouselCircle {
+        z-index: -1;
+        border-radius: 64px;
+        border: 32px solid black;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        display: inline-block;
+        margin-left: 16px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    
+    
+    .responsiveThumbnails img {
+        height: 5em;
+        width: 5em;
+    }
+    
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive {
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .exploreMoreAboutMyselfBottomSpacingResponsive#headerParagraph {
+        margin-bottom: 3em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive div,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h3,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h4 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    
+    .technicalExperienceProjectsVolunteerHeaderSegmentResponsive {
+        margin-bottom: 0.3em;
+        overflow: scroll;
+    }
+    
+    .technicalExperienceLeftSideResponsive {
+        font-size: 1.3em;
+        margin-right: 0.1em;
+    }
+
+    .technicalExperienceRightSideResponsive {
+        font-size: 1.3em;
+        margin-left: 0.1em;
+    }
+    
+    
+    .inputSpacingResponsive {
+        font-size: 1.3em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    
+    /* http://jsfiddle.net/GTGan/ */
+    .inputSpacingResponsive label {
+        overflow: hidden;
+        font-size: 0.7em;
+        background: black;
+        color: white;
+        border-radius:0.3em;   
+        padding: 0.5em;
+        text-indent: 0;
+        vertical-align: middle;
+    }
+    
+    .inputSpacingResponsive label input {
+        transform: scale(3, 3);
+        vertical-align: middle;
+        margin-right: 3em;
+        background: white;
+    }
+    
+    .inputSpacingResponsive .inputCaption {
+        font-size: 0.5em;
+        margin-top: 1em;
+    }
+    
+    /* http://stackoverflow.com/questions/21506276/how-do-i-make-the-text-box-bigger-in-html-css */
+    .textInputElementsResponsive, .youBetterContactMeSpacingResponsive select {
+        height: 200%;
+        font-size: 1.6em;
+        width: 100%;
+    }
+    
+    .youBetterContactMeSpacingResponsive select option {
+        font-size: 0.3em;
+        width: 100%;
+    }
+    
+    #responsivePageBodyBlock #contactMeWarningMessages, 
+    #responsivePageBodyBlock #contactMeSendingStatus{
+        font-size: 1em;
+    }
+    
+    .youBetterContactMeSpacingResponsive textarea {
+        max-height: 9.5em;
+        height: 9.5em;
+        margin-bottom: 1em;
+        font-size: 1.25em;
+        max-width: 100%;
+    }
+    
+    #responsivePageBodyBlock #sendMessageButton {
+        font-size: 1.8em;
+        height: 2em;
+        margin-bottom: 0.8em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive #creditsImportantSection {
+        font-size: 0.9em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .blogThumbnails {
+        height: 8em;
+        border-radius: 4em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .specialThanksGroups {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .specialThanksGroups div {
+        margin: 0;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .specialThanksGroups .splatoonDevelopmentTeamExecutives {
+        text-indent: 0;
+        margin-left: 0.5em;
+    }
+    
+    #tributeMessageResponsive div {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .resumeImportantSectionHeaderResponsive {
+        margin-bottom: 10px;
+    }
+
+    
+    .youBetterContactMeSpacingResponsive .inputCaption {
+        font-size: 0.9em;
+    }
+    
+    
+    .responsiveFollowMeBlocks {
+        display: table-cell;
+        vertical-align: center;
+        padding: 10px;
+    }
+    
+    #originalSplatoonDevelopmentTeamBlock {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .socialNetworkingLinksNoticesResponsive {
+        margin-bottom: 0.2em;
+    }
+    
+    #responsiveSpecialSymbolsGroup .rightSideOfIntroductorySectionSymbols {
+        font-size: 2em;
+    }
+    
+    #miitomoQRCodeResponsiveVersion {
+        height: auto;
+        width: 100%;
+    }
+    
+    /*.socialNetworkingLinksNoticesResponsive, .photoCopyrightsBlocksResponsive {
+        font-size: 1.2em;
+    }*/
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 550px) {
+    
+    #photoGalleryResponsiveSelectionBlock .photoAlbumLink {
+        margin-bottom: 0.8em;
+        margin-top: 0.8em;
+        font-size: 1.35em;
+    }
+    
+    #photoGalleryResponsiveSelectionBlock .albumCaption {
+        font-size: 0.75em;
+    }
+    
+    .photoGalleryResponsiveInstructions, .exploreMoreAboutMyselfSectionBottomSpacingResponsive#morePhotosComingSoonBlock{
+        font-size: 1.3em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .exploreMoreAboutMyselfBlogsBottomSpacing div div{
+        font-size: 1.2em;
+    }
+    
+    .resumeResponsiveLinkBlocksResponsive, .exploreMoreAboutMeLinkBlocksResponsive, .observeMyPersonalityFAQLinkBlocksResponsive {
+        height: 10px;
+        margin-top: 0;
+    }
+    
+    .observeMyPersonalityPhotoGalleryLinkBlocksResponsive{
+        height: 40px;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive {
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+    
+    #responsiveCurrentImageDisplayed {
+        height: 1.4em;
+    }
+    
+    #homePageSubheadingResponsive {
+        font-size: 1.35em;
+        margin-top: 0.5em;
+    }
+    
+    #responsiveSpecialSymbolsGroup {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    
+    #responsivePictureComponent {
+        width: 60%;
+    }
+    
+    .responsiveHomePagePhotos {
+        width: 75%;
+        height: 75%;
+    }
+    
+    #responsivePageBodyBlock {
+        /*border-width: 0 0.5em 0 0.5em;
+        border-color: black;
+        border-style: solid;*/
+        padding-bottom: 1em;
+    }
+    
+    #sectionAboveResumeHeaderResponsive div, #exploreMoreAboutMeResponsive div, #exploreMoreEducationHistoryResponsive div, #exploreMorePortfolioOfProjectsResponsive div, #observeMyPersonalityResponsive div{
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    .menuBlockResponsive {
+        top: 2em;
+    }
+    
+    #responsiveMenuBlock {
+        font-size: 30px;
+    }
+    
+    #resumeHeaderNameResponsive {
+        font-size: 1.3em;
+    }
+    
+    #resumeHeaderTopBlockResponsive {
+        text-align: center;
+    }
+    
+    #resumeHeaderBottomBlockResponsive {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        margin-top: 0.3em;
+    }
+    
+    
+    /* http://stackoverflow.com/questions/9402856/how-to-put-table-in-the-center-of-the-page-using-css */
+    #resumeHeaderBottomBlockResponsive table {
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+    
+    #resumeHeaderTopBlockResponsive {
+        font-size: 1.35em;
+    }
+    
+    .resumeHeadlineTextResponsive {
+        font-size: 1.5em;
+    }
+    
+    .technologiesBlock {
+        font-size: 1.3em;
+    }
+    
+    .responsiveBody, h4{
+        font-size: 1.2em;
+    }
+    
+    .resumeResponsiveLinkBlocks {
+        height: 20px;
+        display: none;
+    }
+    
+    .responsiveBody .footerBarCopyrightLinks {
+        font-size: 1.5em;
+    }
+    
+    #responsiveCopyrightNoticeBlock {
+        font-size: 1.2em;
+    }
+    
+    #pictureCarouselLeftButtonSetResponsive, #pictureCarouselRightButtonSetResponsive{
+        width: 3em;
+        height: 3em;
+    }
+
+    #pictureCarouselLeftButtonBackgroundResponsive {
+        border-top: 1.5em solid transparent;
+        border-bottom: 1.5em solid transparent;
+        border-right: 1.5em solid black;
+    }
+
+    #pictureCarouselRightButtonBackgroundResponsive {
+        border-top: 1.5em solid transparent;
+        border-bottom: 1.5em solid transparent;
+        border-left: 1.5em solid black;
+    }
+    
+    .responsiveHomePictureCarouselCircle {
+        z-index: -1;
+        border-radius: 32px;
+        border: 16px solid black;
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    
+    
+    .technicalExperienceProjectsVolunteerHeaderSegmentResponsive {
+        margin-bottom: 0.3em;
+        overflow: scroll;
+    }
+    
+    .technicalExperienceLeftSideResponsive {
+        font-size: 1.3em;
+        margin-right: 0.1em;
+    }
+    
+    .resumeImportantSectionHeaderResponsive {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive div,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h3,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h4 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .exploreMoreAboutMyselfBottomSpacing,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .exploreMoreAboutMyselfList {
+        font-size: 1.2em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h3 {
+        font-size: 1.5em;
+    }
+    
+    #personalCatchphraseResponsive {
+        font-size: 1.5em;
+    }
+    
+    .portfolioOfProjectsRightBlock .exploreMoreAboutMyselfSectionBottomSpacingResponsive,
+    .responsivePortfolioWithoutPhoto .exploreMoreAboutMyselfSectionBottomSpacingResponsive,
+    .githubRepoAndPortfolioResponsive#headerParagraph, .githubRepoAndPortfolioResponsive div{
+        font-size: 1.2em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .observeMyPersonalityHeader {
+        font-size: 1.45em;
+    }
+    
+    #observeMyPersonalityResponsiveNotice {
+        font-size: 1.4em;
+    }
+    
+    
+    
+    
+    .inputSpacingResponsive {
+        font-size: 1.4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    /* http://jsfiddle.net/GTGan/ */
+    .inputSpacingResponsive label {
+        overflow: hidden;
+        background: black;
+        color: white;
+        border-radius:0.7em;   
+        padding: 0.2em;
+        margin-top: 0.8em;
+        margin-bottom: 0.4em;
+        text-indent: 0;
+        vertical-align: middle;
+    }
+    
+    .inputSpacingResponsive label input {
+        transform: scale(2, 2);
+        vertical-align: middle;
+        margin-right: 3em;
+        background: white;
+    }
+    
+    .inputSpacingResponsive .inputCaption {
+        font-size: 1em;
+        margin-top: 0.2em;
+    }
+    
+    .youBetterContactMeSpacingResponsive#typeOfEmail .contactMeHeader {
+        font-size: 1.6em;
+    }
+    
+    #contactMeRequiredFieldsResponsive {
+        font-size: 1.4em;
+    }
+    
+    .youBetterContactMeSpacingResponsive .inputCaption#phoneNumberCaption {
+        font-size: 1.2em;
+    }
+    
+    /* http://stackoverflow.com/questions/21506276/how-do-i-make-the-text-box-bigger-in-html-css */
+    .textInputElementsResponsive {
+        height: 200%;
+        font-size: 1.6em;
+        width: 100%;
+    }
+    
+    #responsivePageBodyBlock #contactMeWarningMessages, 
+    #responsivePageBodyBlock #contactMeSendingStatus{
+        font-size: 1em;
+    }
+    
+    .youBetterContactMeSpacingResponsive textarea {
+        max-height: 9.5em;
+        height: 9.5em;
+        margin-bottom: 1em;
+        font-size: 1.25em;
+        max-width: 100%;
+    }
+    
+    #responsivePageBodyBlock #sendMessageButton {
+        font-size: 1.5em;
+        height: 2em;
+    }
+    
+    #downloadLinkResponsive {
+        font-size: 1.4em;
+    }
+    
+    #responsivePageBodyBlock .resumeSection ul,
+    #responsivePageBodyBlock #resumeActivitiesAndInterestsBlock1,
+    #responsivePageBodyBlock #resumeActivitiesAndInterestsBlock2,
+    #responsivePageBodyBlock #resumeActivitiesAndInterestsBlock3 {
+        font-size: 1.2em;
+    }
+    
+    .responsiveFollowMePictures {
+        height: 2.5em;
+    }
+    
+    .responsiveFollowMeBlocks {
+        display: table-cell;
+        vertical-align: center;
+        padding: 0.9em;
+    }
+    
+    .youBetterContactMeInstructionsResponsive {
+        font-size: 1.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    .responsiveBody .creditsSectionSpacing {
+        font-size: 1.3em;
+    }
+    
+    .creditsSectionSpacing .photoAlbumHeaderResponsive {
+        margin-bottom: 0em;
+    }
+    
+    .socialNetworkingLinksNoticesResponsive {
+        margin-top: 0.35em;
+    }
+    
+    .specialThanksGroups .specialThanksGroupHeaders {
+        margin-top: 1.4em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive #creditsImportantSection {
+        font-size: 1.4em;
+    }
+    
+    #originalSplatoonDevelopmentTeamBlock {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .splatoonDevelopmentTeamExecutives {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 800px) {
+    
+    body {
+        font-size: 1em;
+    }
+    
+    #responsivePageBodyBlock {
+        /*border-width: 0 1em 0 1em;
+        border-color: black;
+        border-style: solid;*/
+        padding-top: 1em;
+    }
+    
+    #responsiveMenuBlock {
+        font-size: 1.35em;
+    }
+    
+    .footerBarCopyrightLinks {
+        font-size: 1.3em;
+    }
+    
+    #responsiveCopyrightNoticeBlock {
+        font-size: 1.2em;
+    }
+    
+    #resumeHeaderTopBlockResponsive {
+        float: left;
+        text-align: left;
+        font-size: 1.05em;
+    }
+    
+    #resumeHeaderBottomBlockResponsive {
+        float: right;
+        font-size: 1.05em;
+        margin-top: 0px;
+    }
+    
+    .technologiesBlock {
+        font-size: 1.1em;
+    }
+    
+    #resumeHeaderBottomBlockResponsive table {
+        margin: 0;
+        font-size: 1.2em;
+        vertical-align: top;
+    }
+    
+    .responsiveBody {
+        font-size: 1.2em;
+    }
+    
+    .resumeResponsiveLinkBlocks {
+        height: 20px;
+        display: none;
+    }
+    
+    #pictureCarouselLeftButtonSetResponsive, #pictureCarouselRightButtonSetResponsive{
+        width: 3em;
+        height: 4em;
+    }
+
+    #pictureCarouselLeftButtonBackgroundResponsive {
+        border-top: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-right: 1em solid black;
+    }
+
+    #pictureCarouselRightButtonBackgroundResponsive {
+        border-top: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-left: 1em solid black;
+    }
+    
+    #pictureCarouselLeftButtonBackgroundResponsive,
+    #pictureCarouselRightButtonBackgroundResponsive {
+        position: relative;
+        top: 1em;
+    }
+    
+    
+    
+    responsiveHomePictureCarouselCircle {
+        z-index: -1;
+        border-radius: 12px;
+        border: 6px solid black;
+        width: 6px;
+        height: 6px;
+        background-color: black;
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    
+    #responsiveSpecialSymbolsGroup {
+        font-size: 2em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    
+    #responsiveSpecialSymbolsGroup .rightSideOfIntroductorySectionSymbols {
+        font-size: 1.6em;
+    }
+    
+    .homePageSpecialCharactersCaptionResponsive {
+        font-size: 0.8em;
+    }
+    
+    #responsivePageBodyBlock .pageHeader {
+        font-size: 1.8em;
+    }
+    
+    
+    #resumeHeaderNameResponsive {
+        font-size: 1.5em;
+    }
+    
+    .personCaption {
+        font-size: 1.3em;
+    }
+    
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive .exploreMoreAboutMyselfBlogsBottomSpacing {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    /*.exploreMoreAboutMyselfSectionBottomSpacingResponsive div,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h3,
+    .exploreMoreAboutMyselfSectionBottomSpacingResponsive h4 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }*/
+    
+    .blogThumbnails {
+        vertical-align: top;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing .exploreMoreAboutMyselfBlogPictureBlock {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing {
+        height: 5em;
+    }
+    
+    #photoGalleryResponsiveSelectionBlock .albumCaption {
+        font-size: 0.9em;
+    }
+    
+    /*#currentImageCaption {
+        font-size:
+    }*/
+    
+    .responsiveBody #thumbnailBlock, .responsiveBody #currentImageCaption, .responsiveBody #loadingMessageBlock {
+        font-size: 1.3em;
+    }
+    
+    .responsiveBody #specialThanksBlock, .responsiveBody #tributeMessageResponsive {
+        font-size: 1.4em;
+    }
+    
+    .textInputElementsResponsive {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+/* Desktop media queries  */
+@media only screen and (max-device-width: 1365px) {
+    .desktopBody #thumbnailBlock .desktopThumbnails img, .blogSectionDesktop img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .photoAlbumLink {
+        font-size: 13px;
+    }
+    
+    #desktopCurrentImageDisplayed {
+        height: 500px;
+    }
+    
+    .desktopMenuImageBlock img {
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 60px;
+        width: auto;
+        padding: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .albumCaption {
+        font-size: 12px;
+    }
+    
+    #introductorySectionDesktop #pictureComponent, #introductorySectionDesktop #pictureComponent img {
+        height: 500px;
+        width: 333px;
+    }
+    
+    #introductorySectionDesktop #rightSideOfIntroductorySection {
+        font-size: 1.2em;
+    }
+    
+    
+    #desktopPhotoGalleryInstructions, #desktopSelectAPhotoMessage, #thumbnailBlock, #morePhotosComingSoonBlock {
+        font-size: 16px;
+    }
+    
+    #loadingMessageBlock, #currentImageCaptionDesktop {
+        font-size: 15px;
+    }
+    
+    #websiteHeaderDesktop {
+        font-size: 1.5em;
+    }
+    
+    
+    #introductorySectionDesktop #pictureCarouselLeftButtonSet, 
+    #introductorySectionDesktop #pictureCarouselRightButtonSet { 
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    
+    #introductorySectionDesktop #pictureCarouselLeftButtonBackground {
+        left: -7.5px;
+        top: 5px;
+        width: 0px;
+        height: 0px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid black;
+    }
+
+    #introductorySectionDesktop #pictureCarouselRightButtonBackground {
+        left: 7.5px;
+        top: 5px;
+        width: 0px;
+        height: 0px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid black;
+    }
+    
+    #homePageSubheadingDesktop {
+        font-size: 21px;
+    }
+}
+
+
+
+
+
+
+
+/* Desktop media inquiries */
+
+/* Use min-width for iframes instead of min-device-width. */
+@media only screen and (min-device-width: 1366px) {
+    
+    .photoAlbumLink {
+        font-size: 20px;
+    }
+    
+    .albumCaption {
+        font-size: 14px;
+    }
+    
+    .desktopBody #thumbnailBlock .desktopThumbnails img, .blogSectionDesktop img {
+        height: 120px;
+        width: 120px;
+    }
+    
+    #desktopCurrentImageDisplayed {
+        height: 520px;
+    }
+    
+    #desktopHoverOverLabelForAMenuButton {
+        font-size: 1.3em;
+        height: 1.2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    #desktopExtraPagesBlock {
+        font-size: 1em;
+        height: 2em;
+    }
+    
+    .desktopMenuImageBlock img {
+        border: 1px solid black;
+        border-radius: 20px;
+        height: 60px;
+        width: auto;
+        padding: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #desktopExploreMoreAboutMyselfLinks div, #desktopObserveMyPersonalityLinks div {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #introductorySectionDesktop #pictureComponent, #introductorySectionDesktop #pictureComponent img {
+        height: 600px;
+        width: 399px;
+    }
+    
+    #introductorySectionDesktop #rightSideOfIntroductorySection {
+        font-size: 1.5em;
+    }
+    
+    #websiteHeaderDesktop {
+        font-size: 30px;
+    }
+    
+    #homePageSubheadingDesktop {
+        font-size: 24px;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing .blogSectionDesktop {
+        height: 320px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* Use min-width for iframes instead of min-device-width. */
+@media only screen and (min-device-width: 1920px) {
+    
+    .photoAlbumLink {
+        font-size: 25px;
+    }
+    
+    .albumCaption {
+        font-size: 18px;
+    }
+    
+    .desktopBody #thumbnailBlock .desktopThumbnails img, .blogSectionDesktop img {
+        height: 190px;
+        width: 190px;
+    }
+    
+    #desktopCurrentImageDisplayed {
+        height: 760px;
+    }
+    
+    .pageHeader {
+        font-size: 27px;
+    }
+    
+    #desktopPhotoGalleryInstructions, #desktopSelectAPhotoMessage, #thumbnailBlock, #morePhotosComingSoonBlock {
+        font-size: 22px;
+    }
+    
+    #loadingMessageBlock, #currentImageCaptionDesktop {
+        font-size: 20px;
+    }
+    
+    #introductorySectionDesktop #pictureComponent, #introductorySectionDesktop #pictureComponent img {
+        height: 925px;
+        width: 615px;
+    }
+    
+    #websiteHeaderDesktop {
+        font-size: 38px;
+    }
+    
+    #introductorySectionDesktop #rightSideOfIntroductorySection {
+        font-size: 2em;
+    }
+    
+    #homePageSubheadingDesktop {
+        font-size: 32px;
+    }
+    
+    #websiteVersion {
+        font-size: 28px;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing .blogSectionDesktop {
+        height: 320px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* Use min-width for iframes instead of min-device-width. */
+@media only screen and (min-device-width: 2560px) {
+    .photoAlbumLink {
+        font-size: 30px;
+    }
+    
+    .albumCaption {
+        font-size: 23px;
+    }
+    
+    .desktopBody #thumbnailBlock .desktopThumbnails img, .blogSectionDesktop img{
+        height: 240px;
+        width: 240px;
+    }
+    
+    #desktopCurrentImageDisplayed {
+        height: 1080px;
+    }
+    
+    #desktopPhotoGalleryInstructions, #desktopSelectAPhotoMessage, #thumbnailBlock, #morePhotosComingSoonBlock {
+        font-size: 26px;
+    }
+    
+    .pageHeader {
+        font-size: 32px;
+    }
+    
+    #loadingMessageBlock, #currentImageCaptionDesktop {
+        font-size: 25px;
+    }
+    
+    #introductorySectionDesktop #pictureComponent, #introductorySectionDesktop #pictureComponent img {
+        height: 1300px;
+        width: 864px;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing.blogSectionDesktop {
+        height: 320px;
+        margin-bottom: 200px;
+    }
+}
+
+
+
+
+
+/* Use min-width for iframes instead of min-device-width. */
+@media only screen and (min-device-width: 3840px) {
+    .photoAlbumLink {
+        font-size: 36px;
+    }
+    
+    .albumCaption {
+        font-size: 26px;
+    }
+    
+    .desktopBody #thumbnailBlock .desktopThumbnails img {
+        height: 320px;
+        width: 320px;
+    }
+    
+    #desktopCurrentImageDisplayed {
+        height: 1800px;
+    }
+    
+    #desktopPhotoGalleryInstructions, #desktopSelectAPhotoMessage, #thumbnailBlock, #morePhotosComingSoonBlock {
+        font-size: 31px;
+    }
+    
+    .pageHeader {
+        font-size: 39px;
+    }
+    
+    #loadingMessageBlock, #currentImageCaptionDesktop {
+        font-size: 29px;
+    }
+    
+    #introductorySectionDesktop #pictureComponent, #introductorySectionDesktop #pictureComponent img {
+        height: 2048px;
+        width: 1365px;
+    }
+    
+    .exploreMoreAboutMyselfBlogsBottomSpacing.blogSectionDesktop {
+        height: 320px;
+        margin-bottom: 0;
+    }
+}
