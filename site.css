@@ -19,6 +19,7 @@ body {font-family: 'Open Sans', sans-serif; margin: auto auto; max-width:800px; 
 h1,h2,h3,h4{line-height:1.2;}
 h3 {margin-top: 2em;}
 h3,h4, #quoteBlocks div div {margin-bottom: 0;}
+img {max-width: 100%;height: auto;}
 .mainSectionSpacing {margin-bottom: 4em;}
 .mainSectionSpacing div {margin-bottom: 1em;}
 #quoteBlocks div {margin-top: 1em;}
