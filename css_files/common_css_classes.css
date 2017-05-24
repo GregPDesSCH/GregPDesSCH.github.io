@@ -1392,6 +1392,8 @@ h1, h2, h3, h4, h5, h6 {
     #homePageSubheadingDesktop {
         font-size: 21px;
     }
+    
+    
 }
 
 
@@ -1470,6 +1472,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 320px;
         margin-bottom: 0;
     }
+    
+    .desktopSection {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -1531,6 +1537,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 320px;
         margin-bottom: 0;
     }
+    
+    .desktopSection {
+        font-size: 1.9em;
+    }
 }
 
 
@@ -1574,6 +1584,10 @@ h1, h2, h3, h4, h5, h6 {
     .exploreMoreAboutMyselfBlogsBottomSpacing.blogSectionDesktop {
         height: 320px;
         margin-bottom: 200px;
+    }
+    
+    .desktopSection {
+        font-size: 2.4em;
     }
 }
 
@@ -1620,5 +1634,9 @@ h1, h2, h3, h4, h5, h6 {
     .exploreMoreAboutMyselfBlogsBottomSpacing.blogSectionDesktop {
         height: 320px;
         margin-bottom: 0;
+    }
+    
+    .desktopSection {
+        font-size: 2.8em;
     }
 }

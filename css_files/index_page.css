@@ -7,6 +7,7 @@
     
     File Name: Index Page.css
     
+    Update 1 Start: October 22, 2016
     
     
     Coding by Gregory Desrosiers
@@ -16,11 +17,14 @@
     © 2016 Gregory Desrosiers. All rights reserved.
 */
 
-html,body { height:100%; }
+html,body { 
+    height:100%; 
+}
 
 #indexPageBodyBlock {
     text-align: center;
     background-color: white;
+    border-radius: 4em;
 }
 
 #websiteHeaderIndexPage {
@@ -104,18 +108,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
     background-color: #3418D8;
 }
 
-#websiteHeaderLetterG {
-    color: #FF8F04;
-}
-
-#websiteHeaderLetterP {
-    color: #B5DC13;
-}
-
-#websiteHeaderLetterD {
-    color: #3418D8;
-}
-
 
 
 
@@ -139,10 +131,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
     
     #welcomeMessage {
         margin-bottom: 0;
-    }
-    
-    #instructionCaption {
-        margin-bottom: 10px;
     }
     
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
@@ -252,9 +240,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
         font-size: 3em;
     }
     
-    #instructionCaption {
-        margin-bottom: 10px;
-    }
     
     #wiiULogo2, #phonesAndTabletsLogo2, #pcLogo2 {
         height: 400px;
@@ -361,9 +346,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
         margin-bottom: 0;
     }
     
-    #instructionCaption {
-        margin-bottom: 10px;
-    }
     
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
         height: 150px;
@@ -429,10 +411,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
     
     #welcomeMessage {
         margin-bottom: 0;
-    }
-    
-    #instructionCaption {
-        margin-bottom: 10px;
     }
     
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
@@ -528,10 +506,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
         margin-bottom: 0;
     }
     
-    #instructionCaption {
-        margin-bottom: 10px;
-    }
-    
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
         height: 150px;
         width: 150px;
@@ -595,10 +569,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
     
     #welcomeMessage {
         margin-bottom: 0;
-    }
-    
-    #instructionCaption {
-        margin-bottom: 10px;
     }
     
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
@@ -666,10 +636,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
         margin-bottom: 0;
     }
     
-    #instructionCaption {
-        margin-bottom: 10px;
-    }
-    
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {
         height: 150px;
         width: 150px;
@@ -733,10 +699,6 @@ Hover colors inspired by the three figures of Nintendo's Splatoon Amiibos.
     
     #welcomeMessage {
         margin-bottom: 0;
-    }
-    
-    #instructionCaption {
-        margin-bottom: 10px;
     }
     
     #wiiULogo, #phonesAndTabletsLogo, #pcLogo {

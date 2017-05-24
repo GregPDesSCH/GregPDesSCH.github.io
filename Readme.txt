@@ -17,6 +17,11 @@ Coding End: May 27, 2016
 Made in Canada. Developed in Mississauga, Ontario, and Waterloo, Ontario. Update Design produced in Mississauga, Ontario.
 
 
+Update 1: September 7, 2016
+Update 2: October 22, 2016
+
+
+
 This website is hosted on a GitHub Pages domain.
 
 
@@ -61,13 +66,6 @@ StackOverflow.com
 
 Codecademy
 Code School LLC
-
-
-
-
-~ Photo Copyrights ~
-
-
 
 
 
