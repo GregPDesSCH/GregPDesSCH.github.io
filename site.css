@@ -1,0 +1,25 @@
+/* 
+    Gregory Desrosiers' Personal Website
+    2017 Revision
+
+    For professional reasons, a simple one-page personal website has been made
+    for university recruiters.
+
+    Programmed by Gregory Desrosiers
+
+    Design inspired by Yu Chen Hou's own website.
+    
+    Start Date: May 17, 2017
+    End Date:
+
+    File Name: site.css
+*/
+
+body {font-family: 'Open Sans', sans-serif; margin: auto auto; max-width:800px; line-height:1.6; color:#444444; padding:0 10px;}
+h1,h2,h3,h4{line-height:1.2;}
+h3 {margin-top: 2em;}
+h3,h4, #quoteBlocks div div {margin-bottom: 0;}
+.mainSectionSpacing {margin-bottom: 4em;}
+.mainSectionSpacing div {margin-bottom: 1em;}
+#quoteBlocks div {margin-top: 1em;}
+.importantLinks div {margin-bottom: 0;}
