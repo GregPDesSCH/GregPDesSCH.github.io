@@ -17,11 +17,10 @@
 
 body {font-family: 'Open Sans', sans-serif; margin: auto auto; max-width:800px; line-height:1.6; color:#444444; padding:0 10px;}
 h1,h2,h3,h4{line-height:1.2;}
-h3 {margin-top: 2em;}
+h3 {margin-top: 1em;}
 h3,h4, #quoteBlocks div div {margin-bottom: 0;}
-img {max-width: 100%;height: auto;}
+img {max-width: 80%; display: block; margin: 0 auto; height: auto;}
 .blogImages {text-align:center;}
-.mainSectionSpacing {margin-bottom: 4em;}
 .mainSectionSpacing div {margin-bottom: 1em;}
 #quoteBlocks div {margin-top: 1em;}
 .importantLinks div {margin-bottom: 0;}
