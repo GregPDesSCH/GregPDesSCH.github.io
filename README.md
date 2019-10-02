@@ -21,6 +21,9 @@ May 2019 Version
 Start Date: May 24, 2019
 End Date: May 25, 2019
 
+October 2019 Version
+Start and End Date: October 2, 2019
+
 Design inspiration through the websites of Dave Pagurek van Mossel and Yu Chen Hou.  
 
 © 2017 - 2019 Gregory Desrosiers. All rights reserved.  
