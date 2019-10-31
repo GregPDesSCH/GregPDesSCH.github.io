@@ -30,6 +30,9 @@ Date: October 7, 2019
 October 2019 Resume Update
 Date: October 11, 2019
 
+November 2019 Resume Update
+Date: October 31, 2019
+
 Design inspiration through the websites of Dave Pagurek van Mossel and Yu Chen Hou.  
 
 © 2017 - 2019 Gregory Desrosiers. All rights reserved.  
